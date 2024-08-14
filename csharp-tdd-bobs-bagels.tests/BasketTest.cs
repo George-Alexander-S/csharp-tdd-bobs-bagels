@@ -8,15 +8,17 @@ public class BasketTest
     {
         //arrange
         Basket basket = new Basket();
+
         Dictionary<string, int> shopItems = new Dictionary<string, int>();
 
         //tuple lists are cool
-        var basketContent = new List<(string product, int amount)> { };
+        List<(string, int, int)> basketContent = new List<(string, int, int)>();
+
         bool expected = true;
 
         //act
 
-        bool result = basket.Add(product, price);
+        bool result = basket.AddItem(product, price);
 
         //assert
 
