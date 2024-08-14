@@ -9,8 +9,6 @@ public class BasketTest
         //arrange
         Basket basket = new Basket();
 
-        Dictionary<string, int> shopItems = new Dictionary<string, int>();
-
         ////tuple lists are cool
         //List<(string, int)> basketContent = new List<(string, int)>();
 
@@ -22,7 +20,21 @@ public class BasketTest
 
         //assert
 
-        Assert.IsTrue(result);
+        Assert.IsTrue(result == expected);
     }
+
+    [TestCase("Coke")]
+    public void removeItemTest(string product)
+    {
+        //arrange
+        Basket basket = new Basket();
+        bool expected = true;
+
+        //act
+        bool result = basket.RemoveItem(product);
+
+        //assert
+        Assert.IsTrue(result == expected);
+    } 
 
 }
