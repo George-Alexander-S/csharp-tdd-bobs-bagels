@@ -5,7 +5,7 @@ I'd like to add a specific type of bagel to my basket.`
 
 | Classes  | Members                                                            | Methods                          | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|----------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `Dictionary<string, int> items`                                    | `add(String product, int price)` | Item added                                                 | true    |
+| `Basket` | `List<string> shopItems`                                           | `add(String product)`            | Item added                                                 | true    |
 |          |                                                                    |                                  | Item not sucsesfully added                                 | false   |
 |          | `List<string, int> basketContent`                                  |                                  |                                                            |         |
 
@@ -16,7 +16,7 @@ I'd like to remove a bagel from my basket.`
 
 | Classes  | Members                                                            | Methods                             | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `Dictionary<string, int> items`                                  | `remove(String product)`            | Item removed                                               | true    |
+| `Basket` | `List<string> items`                                               | `remove(String product)`            | Item removed                                               | true    |
 |          |                                                                    |                                     | Item not sucsesfully removed                               | false   |
 |          |                                                                    |                                     |                                                            |         |
 

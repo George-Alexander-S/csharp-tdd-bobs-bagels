@@ -16,6 +16,8 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         List<string> basketContent = new List<string>();
 
+        int cap = 3;
+
         public bool AddItem (string product)
         {
             if (shopItems.Contains(product))
@@ -39,6 +41,18 @@ namespace tdd_bobs_bagels.CSharp.Main
             else
             {
                 return false;
+            }
+        }
+
+        public bool isRoom()
+        {
+            if (cap <= basketContent.Count)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 

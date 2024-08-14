@@ -36,6 +36,16 @@ public class BasketTest
 
         //assert
         Assert.IsTrue(result == expected);
-    } 
+    }
+
+    [Test]
+    public void fullBasketTest()
+    {
+        //arrange
+
+        //act
+
+        //assert
+    }
 
 }
