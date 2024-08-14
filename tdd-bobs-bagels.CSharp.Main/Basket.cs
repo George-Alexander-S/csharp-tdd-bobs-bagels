@@ -9,7 +9,10 @@ namespace tdd_bobs_bagels.CSharp.Main
 {
     public class Basket
     {
-        Dictionary<string, int> shopItems = new Dictionary<string, int>();
+        Dictionary<string, int> shopItems = new Dictionary<string, int>
+        {
+            {"Coke", 10 }
+        };
 
         List<(string, int)> basketContent = new List<(string, int)>();
 
@@ -17,7 +20,7 @@ namespace tdd_bobs_bagels.CSharp.Main
         {
             if (shopItems.ContainsKey(product))
             {
-                shopItems[product] = price;
+                price = shopItems[product];
                 basketContent.Add((product, price));
                 return true;
             } else

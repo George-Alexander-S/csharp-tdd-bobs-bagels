@@ -11,8 +11,8 @@ public class BasketTest
 
         Dictionary<string, int> shopItems = new Dictionary<string, int>();
 
-        //tuple lists are cool
-        List<(string, int, int)> basketContent = new List<(string, int, int)>();
+        ////tuple lists are cool
+        //List<(string, int)> basketContent = new List<(string, int)>();
 
         bool expected = true;
 
