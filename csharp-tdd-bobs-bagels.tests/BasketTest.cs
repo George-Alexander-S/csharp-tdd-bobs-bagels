@@ -42,10 +42,17 @@ public class BasketTest
     public void fullBasketTest()
     {
         //arrange
+        Basket basket = new Basket();
+        bool expected = false;
+        basket.AddItem("Coke");
+        basket.AddItem("Coke");
+        basket.AddItem("Coke");
 
         //act
+        bool result = basket.AddItem("Coke");
 
         //assert
+        Assert.IsTrue(result == expected);
     }
 
 }
