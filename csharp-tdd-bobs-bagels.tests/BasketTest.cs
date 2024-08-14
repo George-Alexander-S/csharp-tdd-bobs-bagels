@@ -29,6 +29,7 @@ public class BasketTest
         //arrange
         Basket basket = new Basket();
         bool expected = true;
+        basket.AddItem(product);
 
         //act
         bool result = basket.RemoveItem(product);
