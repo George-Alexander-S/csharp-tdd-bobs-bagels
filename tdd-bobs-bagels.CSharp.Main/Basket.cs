@@ -9,21 +9,21 @@ namespace tdd_bobs_bagels.CSharp.Main
 {
     public class Basket
     {
-        Dictionary<string, int> shopItems = new Dictionary<string, int>
+        List<string> shopItems = new List<string>
         {
-            {"Coke", 10 }
+            "Coke"
         };
 
-        List<(string, int)> basketContent = new List<(string, int)>();
+        List<string> basketContent = new List<string>();
 
-        public bool AddItem (string product, int price)
+        public bool AddItem (string product)
         {
-            if (shopItems.ContainsKey(product))
+            if (shopItems.Contains(product))
             {
-                price = shopItems[product];
-                basketContent.Add((product, price));
+                basketContent.Add((product));
                 return true;
-            } else
+            } 
+            else
             {
                 return false;
             }
@@ -31,7 +31,15 @@ namespace tdd_bobs_bagels.CSharp.Main
 
         public bool RemoveItem(string product)
         {
-            return false;
+            if (basketContent.Contains(product))
+            {
+                basketContent.Remove(product);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }

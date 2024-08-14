@@ -3,8 +3,8 @@ using tdd_bobs_bagels.CSharp.Main;
 
 public class BasketTest
 {
-    [TestCase("Coke", 10)]
-    public void addItemTest(string product, int price)
+    [TestCase("Coke")]
+    public void addItemTest(string product)
     {
         //arrange
         Basket basket = new Basket();
@@ -16,7 +16,7 @@ public class BasketTest
 
         //act
 
-        bool result = basket.AddItem(product, price);
+        bool result = basket.AddItem(product);
 
         //assert
 
