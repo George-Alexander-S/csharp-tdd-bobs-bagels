@@ -23,9 +23,4 @@ public class BasketTest
         Assert.IsTrue(result);
     }
 
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
-    }
 }
