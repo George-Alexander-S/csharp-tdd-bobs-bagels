@@ -5,9 +5,9 @@ I'd like to add a specific type of bagel to my basket.`
 
 | Classes  | Members                                                            | Methods                          | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|----------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `<Dictionary><string, int> items`                                  | `add(String product, int price)` | Item added                                                 | true    |
+| `Basket` | `Dictionary<string, int> items`                                    | `add(String product, int price)` | Item added                                                 | true    |
 |          |                                                                    |                                  | Item not sucsesfully added                                 | false   |
-|          |                                                                    |                                  |                                                            |         |
+|          | `List<string, int> basketContent`                                  |                                  |                                                            |         |
 
 `2.
 As a member of the public,
@@ -16,7 +16,7 @@ I'd like to remove a bagel from my basket.`
 
 | Classes  | Members                                                            | Methods                             | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `<Dictionary><string, int> items`                                  | `remove(String product)`            | Item removed                                               | true    |
+| `Basket` | `Dictionary<string, int> items`                                  | `remove(String product)`            | Item removed                                               | true    |
 |          |                                                                    |                                     | Item not sucsesfully removed                               | false   |
 |          |                                                                    |                                     |                                                            |         |
 
@@ -50,6 +50,6 @@ I'd like to know if I try to remove an item that doesn't exist in my basket.`
 
 | Classes  | Members                                                            | Methods                             | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `<Dictionary><string, int> items`                                  | `exists(string)`                    | check that key exists in dictionary                        | true    |
+| `Basket` | `Dictionary<string, int> items`                                  | `exists(string)`                    | check that key exists in dictionary                        | true    |
 |          |                                                                    |                                     | else                                                       | false   |
 |          |                                                                    |                                     |                                                            |         |
