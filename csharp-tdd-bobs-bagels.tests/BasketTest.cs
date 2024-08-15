@@ -34,11 +34,11 @@ public class BasketTest
     {
         //arrange
         Basket basket = new Basket();
-        bool expected = true;
+        string expected = "Item " + product + " removed from basket";
         basket.AddItem(product);
 
         //act
-        bool result = basket.RemoveItem(product);
+        string result = basket.RemoveItem(product);
 
         //assert
         Assert.IsTrue(result == expected);
@@ -93,15 +93,15 @@ public class BasketTest
         
     }
 
-    [Test]
-    public void alertNotInBasket()
+    [TestCase("Banana")]
+    public void alertNotInBasket(string product)
     {
         //arrange
         Basket basket = new Basket();
-        string expected = "Item does not exist";
+        string expected = "Item " + product + " does not exist in basket";
 
         //act
-        string result = basket.RemoveItemWithAlert("Coke");
+        string result = basket.RemoveItem(product);
 
         //assert
         Assert.IsTrue(expected == result);

@@ -36,16 +36,16 @@ namespace tdd_bobs_bagels.CSharp.Main
             
         }
 
-        public bool RemoveItem(string product)
+        public string RemoveItem(string product)
         {
             if (basketContent.Contains(product))
             {
                 basketContent.Remove(product);
-                return true;
+                return "Item "+product+" removed from basket";
             }
             else
             {
-                return false;
+                return "Item "+product+" does not exist in basket";
             }
         }
 
@@ -64,11 +64,6 @@ namespace tdd_bobs_bagels.CSharp.Main
         public int changeCap(int newcap)
         {
             return cap = newcap;
-        }
-
-        public string RemoveItemWithAlert(string product)
-        {
-            return "nope";
         }
     }
 }
