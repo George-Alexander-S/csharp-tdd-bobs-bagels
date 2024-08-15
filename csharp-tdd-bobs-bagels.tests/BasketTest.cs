@@ -92,4 +92,18 @@ public class BasketTest
         Assert.IsTrue(expected == change);
         
     }
+
+    [Test]
+    public void alertNotInBasket()
+    {
+        //arrange
+        Basket basket = new Basket();
+        string expected = "Item does not exist";
+
+        //act
+        string result = basket.RemoveItemWithAlert("Coke");
+
+        //assert
+        Assert.IsTrue(expected == result);
+    }
 }

@@ -39,7 +39,7 @@ I’d like to change the capacity of baskets.`
 
 | Classes  | Members                                                            | Methods                             | Scenario                                                   | Outputs                |
 |----------|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------|------------------------|
-| `Basket` | `int maxcap`                                                       | `int editCap(int)`                  | Cap changed                                                | new cap int            |
+| `Basket` | `int maxcap`                                                       | `int changeCap(int)`                | Cap changed                                                | new cap int            |
 | `Admin`  | `bool isAdmin`                                                     |                                     | Admin is logged in                                         | Can access editCap     | 
 |          |                                                                    |                                     | Admin is not logged in                                     |  Can not access editCap|
 
@@ -50,6 +50,6 @@ I'd like to know if I try to remove an item that doesn't exist in my basket.`
 
 | Classes  | Members                                                            | Methods                             | Scenario                                                   | Outputs |
 |----------|--------------------------------------------------------------------|-------------------------------------|------------------------------------------------------------|---------|
-| `Basket` | `Dictionary<string, int> items`                                  | `exists(string)`                    | check that key exists in dictionary                        | true    |
+| `Basket` | `List<string>basketContent`                                        | `exists(string)`                    | check that item exists in basket                           | true    |
 |          |                                                                    |                                     | else                                                       | false   |
 |          |                                                                    |                                     |                                                            |         |

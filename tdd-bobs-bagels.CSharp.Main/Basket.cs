@@ -65,5 +65,10 @@ namespace tdd_bobs_bagels.CSharp.Main
         {
             return cap = newcap;
         }
+
+        public string RemoveItemWithAlert(string product)
+        {
+            return "nope";
+        }
     }
 }
