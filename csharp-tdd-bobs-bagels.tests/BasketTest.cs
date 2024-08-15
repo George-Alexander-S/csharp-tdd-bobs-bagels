@@ -4,6 +4,8 @@ using tdd_bobs_bagels.CSharp.Main;
 public class BasketTest
 {
     [TestCase("Coke")]
+    [TestCase("Grandiosa")]
+    [TestCase("Eplejuice")]
     public void addItemTest(string product)
     {
         //arrange
@@ -24,6 +26,8 @@ public class BasketTest
     }
 
     [TestCase("Coke")]
+    [TestCase("Grandiosa")]
+    [TestCase("Eplejuice")]
     public void removeItemTest(string product)
     {
         //arrange

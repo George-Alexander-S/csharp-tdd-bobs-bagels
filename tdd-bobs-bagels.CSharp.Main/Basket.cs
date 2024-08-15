@@ -11,7 +11,9 @@ namespace tdd_bobs_bagels.CSharp.Main
     {
         List<string> shopItems = new List<string>
         {
-            "Coke"
+            "Coke",
+            "Grandiosa",
+            "Eplejuice"
         };
 
         List<string> basketContent = new List<string>();
