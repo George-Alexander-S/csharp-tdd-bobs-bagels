@@ -61,5 +61,11 @@ namespace tdd_bobs_bagels.CSharp.Main
             }
         }
 
+        public int changeCap(int newcap)
+        {
+
+        return cap; 
+
+        }
     }
 }

@@ -1,4 +1,6 @@
 namespace csharp_tdd_bobs_bagels.tests;
+
+using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 using tdd_bobs_bagels.CSharp.Main;
 
 public class BasketTest
@@ -75,6 +77,18 @@ public class BasketTest
         Assert.IsTrue(result == expected);
     }
 
+    [Test]
+    public void changeCapTest()
+    {
+        //arrange
+        Basket basket = new Basket();
+        int expected = 4;
 
+        //act
+        int change = basket.changeCap(4);
 
+        //assert
+        Assert.IsTrue(expected == change);
+        
+    }
 }
