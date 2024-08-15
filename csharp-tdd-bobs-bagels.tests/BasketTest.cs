@@ -83,9 +83,10 @@ public class BasketTest
         //arrange
         Basket basket = new Basket();
         int expected = 4;
+        int newcap = 4;
 
         //act
-        int change = basket.changeCap(4);
+        int change = basket.changeCap(newcap);
 
         //assert
         Assert.IsTrue(expected == change);
