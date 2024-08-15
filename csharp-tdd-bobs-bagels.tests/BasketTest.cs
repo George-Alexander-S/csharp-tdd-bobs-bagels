@@ -59,4 +59,22 @@ public class BasketTest
         Assert.IsTrue(result == expected);
     }
 
+    [Test]
+    public void roomBasketTest()
+    {
+        //arrange
+        Basket basket = new Basket();
+        bool expected = true;
+        basket.AddItem("Coke");
+        basket.AddItem("Coke");
+
+        //act
+        bool result = basket.AddItem("Coke");
+
+        //assert
+        Assert.IsTrue(result == expected);
+    }
+
+
+
 }

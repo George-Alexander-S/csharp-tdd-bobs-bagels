@@ -24,13 +24,16 @@ namespace tdd_bobs_bagels.CSharp.Main
         {
             if (shopItems.Contains(product))
             {
-                basketContent.Add((product));
-                return true;
+                if (isRoom())
+                {
+                    basketContent.Add((product));
+                    return true;
+                }
+                else return false;
+                
             } 
-            else
-            {
-                return false;
-            }
+            else return false;
+            
         }
 
         public bool RemoveItem(string product)
